@@ -14,24 +14,43 @@
 <body>
 
   <!-- Modal Structure -->
-  <div id="modal1" class="modal">
+  <div id="modal1" class="modal" style="background-color: rgb(33, 33, 114);">
     <div class="modal-content">
-      <h2>Form is coming soon</h2>
+      <div class="container">
+        <form action="#">
+            <h3 style="color: aliceblue;" class="center">Sign Up Form</h3>
+            <div class="divider"></div>
+            <br>
+            <div class="row">
+                <div class="input-field col l6 s12">
+                  <input id="first_name" type="text" class="validate" style="color: aliceblue;" required>
+                  <label class="active" for="first_name">Enter Your Name</label>
+                </div>
+                <div class="input-field col l6 s12">
+                    <input id="Email" type="text" class="validate" style="color: aliceblue;" required>
+                    <label class="active" for="Email">Enter Your Email</label>
+                </div>
+                <div class="container">
+                    <div class="input-field col l12 s12">
+                        <input id="password" type="password" class="validate" style="color: aliceblue;" required>
+                        <label for="password">Create New Password</label>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="input-field col l12 s12">
+                        <input id="password2" type="password" class="validate" style="color: aliceblue;" required>
+                        <label for="password2">Confirm Password</label>
+                    </div>
+                </div>
+            </div>
+            <div class="btns" style="padding-bottom: 90px;">
+              <button class="btn waves-effect green left" type="submit">Submit</button>
+              <button class="btn waves-effect red right" type="reset">Reset</button>
+            </div>
+        </form>
     </div>
-    <div class="modal-footer">
-      <a href="#!" class="modal-close waves-effect waves-green btn-flat">Agree</a>
     </div>
   </div>
-
-    <!-- Modal Structure For mobile-->
-    <div id="modal2" class="modal">
-      <div class="modal-content">
-        <h2>Form is coming soon</h2>
-      </div>
-      <div class="modal-footer">
-        <a href="#!" class="modal-close waves-effect waves-green btn-flat">Agree</a>
-      </div>
-    </div>
 
   <!-- Dropdown Structure -->
     <ul id="dropdown1" class="dropdown-content" style="color: blue;">
@@ -81,7 +100,7 @@
 
             <li><a class="dropdown-trigger waves-effect waves-red" href="#!" data-target="dropdown2">PLACES</a></li>
             <li><a href="#pricing" class="waves-effect waves-green">PRICING</a></li>
-            <li><a href="#" class="waves-effect waves-yellow" href="#modal2" class="modal-trigger">SIGN IN</a></li>
+            <li><a href="#" class="waves-effect waves-yellow" href="./form.html">SIGN IN</a></li>
         </ul>
 
     </nav>
